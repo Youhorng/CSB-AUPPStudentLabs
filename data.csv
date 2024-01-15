@@ -1,7 +1,0 @@
-This CSV file contains tabular data representing a collection of employee records. 
-Each row in the file corresponds to an individual employee, and the columns provide 
-information such as employee ID, first name, last name, job title, department, and salary. 
-The data is organized in a comma-separated format, with each field separated by a comma. 
-The file header, located in the first row, specifies the names of the columns. 
-This dataset is intended for use in tracking and managing employee information, 
-facilitating analysis, and generating reports related to the workforce within an organization.

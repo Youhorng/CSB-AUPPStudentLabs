@@ -3,3 +3,73 @@ ideas, or any information you find noteworthy. Whether you're keeping a record o
 activities, drafting a creative piece, or organizing important details, this document is your 
 canvas. Feel free to express yourself, edit, and experiment. Remember to save your changes as 
 you go along. Happy writing!
+
+
+        # Analyse the overall average of all classes
+
+        grade10_average = self.process_file('student_grade_10.csv')['Average'].mean()
+        grade10_average = round(grade10_average, 2)
+
+        grade11_average = self.process_file('student_grade_11.csv')['Average'].mean()
+        grade11_average = round(grade11_average, 2)
+
+        grade12_average = self.process_file('student_grade_12.csv')['Average'].mean()
+        grade12_average = round(grade12_average, 2)
+
+        school_average = [grade10_average, grade11_average, grade12_average]
+
+        total_school_average = (grade10_average + grade11_average + grade12_average) / 3
+        total_school_average = round(total_school_average, 2)
+
+        # Analyse the subject 
+
+        math10_average = self.process_file('student_grade_10.csv')['Math'].mean()
+        chem10_average = self.process_file('student_grade_10.csv')['Chemistry'].mean()
+        phys10_average = self.process_file('student_grade_10.csv')['Physics'].mean()
+        bio10_average = self.process_file('student_grade_10.csv')['Biology'].mean()
+        hist10_average = self.process_file('student_grade_10.csv')['History'].mean()
+
+        grade10_subject_average = {
+            'math': math10_average,
+            'chem': chem10_average,
+            'phys': phys10_average,
+            'bio': bio10_average,
+            'hist': hist10_average
+        }
+
+        max_subject_name_10 = max(grade10_subject_average, key=grade10_subject_average.get)
+        max_subject_grade_10 = grade10_subject_average[max_subject_name_10]
+
+        math11_average = self.process_file('student_grade_11.csv')['Math'].mean()
+        chem11_average = self.process_file('student_grade_11.csv')['Chemistry'].mean()
+        phys11_average = self.process_file('student_grade_11.csv')['Physics'].mean()
+        bio11_average = self.process_file('student_grade_11.csv')['Biology'].mean()
+        hist11_average = self.process_file('student_grade_11.csv')['History'].mean()
+
+        grade11_subject_average = {
+            'math': math11_average,
+            'chem': chem11_average,
+            'phys': phys11_average,
+            'bio': bio11_average,
+            'hist': hist11_average
+        }
+
+        max_subject_name_11 = max(grade11_subject_average, key=grade11_subject_average.get)
+        max_subject_grade_11 = grade11_subject_average[max_subject_name_11]
+
+        math12_average = self.process_file('student_grade_12.csv')['Math'].mean()
+        chem12_average = self.process_file('student_grade_12.csv')['Chemistry'].mean()
+        phys12_average = self.process_file('student_grade_12.csv')['Physics'].mean()
+        bio12_average = self.process_file('student_grade_12.csv')['Biology'].mean()
+        hist12_average = self.process_file('student_grade_12.csv')['History'].mean()
+
+        grade12_subject_average = {
+            'math': math12_average,
+            'chem': chem12_average,
+            'phys': phys12_average,
+            'bio': bio12_average,
+            'hist': hist12_average
+        }
+
+        max_subject_name_12 = max(grade12_subject_average, key=grade12_subject_average.get)
+        max_subject_grade_12 = grade12_subject_average[max_subject_name_12]
