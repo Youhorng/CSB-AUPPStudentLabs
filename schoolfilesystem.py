@@ -151,5 +151,5 @@ class SchoolAssessmentSystem:
 
 sss = SchoolAssessmentSystem()
 
-
+sss.generate_summary()
 
